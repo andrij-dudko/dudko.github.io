@@ -1,0 +1,132 @@
+:root {
+    --primary: #0057b7;
+    --accent: #ffd700;
+    --dark: #121212;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    background: var(--light-bg); 
+    color: #333; 
+    line-height: 1.7; 
+}
+
+/* Шапка */
+header { 
+    background: var(--primary); 
+    color: white; 
+    padding: 60px 20px;
+    text-align: center; 
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+/* Навігація */
+nav { 
+    background: var(--dark); 
+    position: sticky; /* Виправлено тут */
+    top: 0; 
+    z-index: 1000; 
+    padding: 5px 0; 
+}
+
+nav ul { 
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    flex-wrap: wrap; 
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px 25px; 
+    display: block; 
+    font-weight: 600; 
+    transition: 0.3s; 
+}
+
+nav a:hover { 
+    color: var(--accent); 
+    background: rgba(255,255,255,0.1); 
+}
+
+/* Контент */
+.container { 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+/* Сітка карток */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px; 
+    margin: 30px 0; 
+}
+
+.card { 
+    background: var(--white); 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
+    transition: 0.3s; 
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+}
+
+.card img { 
+    width: 100%; 
+    height: 220px; 
+    object-fit: cover; 
+}
+
+.card-body { 
+    padding: 25px; 
+}
+
+.card-body h3 { 
+    margin-top: 0; 
+    color: var(--primary); 
+}
+
+/* Велика стаття */
+.article-box {
+     background: var(--white); 
+     padding: 40px; 
+     border-radius: 15px; 
+     box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+     margin-bottom: 40px; 
+}
+
+.article-box img { 
+    width: 100%; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+footer { 
+    background: var(--dark); 
+    color: #888; 
+    padding: 60px 20px; 
+    text-align: center; 
+    margin-top: 80px; 
+}
+
+footer a { 
+    color: var(--accent); 
+    text-decoration: none; 
+}
